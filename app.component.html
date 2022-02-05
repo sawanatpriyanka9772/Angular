@@ -1,0 +1,16 @@
+{{isready}}
+
+
+<button [disabled]="!isready">click me</button>
+
+
+<button (click)='greetme()'>greetme</button> <br /> |<br />
+{{action}}
+
+<button (mouseenter)="mouseenter()" (mouseout)="mouseout()" (click)="clicked()">This is a button</button>
+
+<br/><br/><br/>
+{{name}}
+<input type="text"value="{{name}}"(input)="texttyped($event)">
+
+<input type="text"[(ngModel)]="name">
